@@ -10,40 +10,40 @@ def get_posts():
         'Content-Type': 'application/json'
     }, json={
         'query': '''
-            {
-  getPostList {
-    items {
-      _id
-      author {
-        _id
-        biography
-        name
-        slug
-      }
-      body
-      deck
-      featureImage {
-        _id
-        caption
-        credit
-        description
-        filename
-        mimeType
-        path
-        sourceUrl
-        title
-        uploadStatus
-      }
-      slug
-      tags {
-        _id
-        name
-      }
-      title
-    }
-    total
-  }
-}
+          {
+          getPostList {
+            items {
+              _id
+              author {
+                _id
+                biography
+                name
+                slug
+              }
+              body
+              deck
+              featureImage {
+                _id
+                caption
+                credit
+                description
+                filename
+                mimeType
+                path
+                sourceUrl
+                title
+                uploadStatus
+              }
+              slug
+              tags {
+                _id
+                name
+              }
+              title
+            }
+            total
+          }
+        }
         '''
     })
 
