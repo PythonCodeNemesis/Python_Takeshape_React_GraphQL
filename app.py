@@ -15,26 +15,8 @@ def get_posts():
             items {
               _id
               author {
-                _id
-                biography
                 name
-                slug
               }
-              body
-              deck
-              featureImage {
-                _id
-                caption
-                credit
-                description
-                filename
-                mimeType
-                path
-                sourceUrl
-                title
-                uploadStatus
-              }
-              slug
               tags {
                 _id
                 name
